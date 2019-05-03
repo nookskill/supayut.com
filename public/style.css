@@ -5,7 +5,7 @@ html {
 }
 
 .bgimg {
-    /* background: #3321B7; */
+     /*background: lightgray;*/
     height: 100%;
     position: relative;
     color: lightslategray;
@@ -38,4 +38,27 @@ html {
 hr {
     margin: auto;
     width: 40%;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+a {
+    color: lightslategray;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: deeppink;
 }
