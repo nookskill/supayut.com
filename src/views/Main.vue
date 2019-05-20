@@ -13,6 +13,7 @@
         <li><a href="mailto:nookskill@hotmail.com">Mail</a></li>
       </ul>
     </div>
+
   </div>
 </template>
 
