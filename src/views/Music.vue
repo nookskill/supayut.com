@@ -6,7 +6,8 @@
         <div>title: {{item.title}}</div>
         <div>artist: {{item.artist}}</div>
         <div>writer: {{item.writer}}</div>
-        <div>soundcloud: {{item.soundcloud}}</div>
+        <div v-if="item.soundcloud">soundcloud: <a v-bind:href="item.soundcloud">Click here</a></div>
+        <div v-else>soundcloud: - </div>
         <div v-if="item.itunes">itunes: <a v-bind:href="item.itunes">Click here</a></div>
         <div v-else>itunes: - </div>
         <div v-if="item.applemusic">applemusic: <a v-bind:href="item.applemusic">Click here</a></div>
@@ -58,5 +59,5 @@
   a {
     color: #c5c6c7;
   }
-  
+
 </style>
