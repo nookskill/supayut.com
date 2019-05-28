@@ -1,8 +1,7 @@
 <template>
   <div class="music">
     <h1>My song</h1>
-    <div v-for="item in data">
-      <div class="box-left"></div>
+    <div v-for="item in data" v-bind:key="item.id">
       <div class="box-main">
         <div>title: {{item.title}}</div>
         <div>artist: {{item.artist}}</div>
@@ -19,7 +18,6 @@
         <div>date: {{item.date}}</div>
         <div>description: {{item.description}}</div>
       </div>
-      <div class="box-right"></div>
     </div>
     <div class="empty-box"></div>
   </div>
@@ -42,9 +40,6 @@
 </script>
 
 <style>
-  .box-left {
-    width: 20%;
-  }
 
   .box-main {
     text-align: left;
@@ -56,10 +51,6 @@
     margin-bottom: 15px;
   }
 
-  .box-right {
-    width: 20%;
-  }
-
   .empty-box {
     margin-top: 100px;
   }
@@ -67,19 +58,5 @@
   a {
     color: #c5c6c7;
   }
-
-  @media only screen and (max-width: 540px) {
-    .box-main {
-      text-align: left;
-      font-weight: bold;
-
-      border: #42b983;
-      border-style: dotted;
-      padding: 15px;
-      margin-bottom: 15px;
-    }
-    .empty-box {
-      margin-top: 100px;
-    }
-  }
+  
 </style>
